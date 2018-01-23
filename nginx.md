@@ -1,9 +1,9 @@
 # USE NGINX with reactjs
 
 ```
-location /{uri} {
+location /{uri_dir} {
    root  {root_dir};   
-   try_files $uri /demo/index.html;
+   try_files $uri /{uri_dir}/index.html;
    index  index.html index.htm; 
 }
 ```
