@@ -3,7 +3,7 @@
 ```
 location /{uri} {
    root  {root_dir};   
-   _ try_files $uri /demo/index.html;  _
+   try_files $uri /demo/index.html;
    index  index.html index.htm; 
 }
 ```
